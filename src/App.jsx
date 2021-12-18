@@ -1,6 +1,4 @@
 import React, { useEffect } from "react";
-import { FaDiscord, FaTwitterSquare } from "react-icons/fa";
-import { MdArrowUpward, MdMenu, MdClose } from "react-icons/md";
 import HeroBanner from "./assets/hero-banner.jpeg";
 import Logo from "./assets/logo.png";
 import TokenImg1 from "./assets/icons/2.png";
@@ -25,6 +23,15 @@ import { PieChart, Pie, Sector, Cell, ResponsiveContainer } from "recharts";
 import { Dropdown } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.css";
 import "./App.css";
+import {
+  FaLinkedin,
+  FaDiscord,
+  FaFacebook,
+  FaYoutube,
+  FaTelegram,
+  FaMedium,
+} from "react-icons/fa";
+import { MdMenu, MdClose, MdArrowUpward } from "react-icons/md";
 
 const data = [
   { name: "Group A", value: 7 },
@@ -386,26 +393,37 @@ function App() {
             <h2 className="mainHeading">About</h2>
             <main>
               <h6>
-                The New Decentralized Game Publisher and Metaverse Gaming Token.
-                Launched on Ethereum Blockchain our ERC20 Token has a Max supply
-                of 10M. Will be used to play upcoming games released on our
-                distribution platform, and inside the metaverse were developing.
-                Exotic Token will also be used to Verify your membership with
-                our Tiger Clan which gets you access to new cool features and
-                perks such as airdrops of NFTs and more.
-              </h6>
-              <h6>
-                Exotic Token will also be used to Verify your membership with
-                our Tiger Clan which gets you access to new cool features and
-                perks such as airdrops of NFTs and more.
-              </h6>
-              <h6>
-                Features Coming soon our very own NFT marketplace,
+                Exotic Metaverse is a decentralized Gaming Metaverse
+                Application, NFT Marketplace, and in game Dex. The network will
+                run on Ethereum Based networks bridging to Binance Smart Chain,
+                Immutable X and Polygon. The Metaverse will use Exotic Token as
+                in game virtual currency, allowing users to own a piece of the
+                Metaverse through land NFT purchase, earn in game rewards, swap
+                tokens and buy NFTS to enhance user experience.
                 <br />
-                Play to Earn gaming, NFT airdrops, and Swap Dex.
                 <br />
-                Players can play games with their NFTs as well Earn rewards and
-                token prizes.
+                Official Contract: 0xe8ad7606297166288db08e2c8ed64faa0bdd446b
+                <br />
+                <br />
+                <a href="https://bscscan.com/token/0xe8ad7606297166288db08e2c8ed64faa0bdd446b">
+                  https://bscscan.com/token/0xe8ad7606297166288db08e2c8ed64faa0bdd446b
+                </a>
+                <br />
+                <br />
+                Exotic is the native utility token that is used for:
+                <br />
+                <br />
+                ➥ Fees in processing transactions in the Metaverse.
+                <br />
+                ➥ Giving Discounted fees for the swap application.
+                <br />
+                ➥ Used for governance votes in a Dao to determine future
+                proposals.
+                <br />
+                ➥ In-game Virtual Currency, for use in games published by
+                Exotic.
+                <br />➥ NFT Marketplace allowing you to earn Exotic Tokens
+                selling your Collectibles and Art
               </h6>
             </main>
           </div>
@@ -425,8 +443,8 @@ function App() {
                 <main>
                   <h6>2% Liquidity</h6>
                   <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Molestias provident
+                    This helps the price become stable and with time the coin
+                    will grow liquidity
                   </p>
                 </main>
               </div>
@@ -437,8 +455,9 @@ function App() {
                 <main>
                   <h6>2% Back to Holders</h6>
                   <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Molestias provident
+                    Diamond Hand Holders will receive 2% in either BNB, ETH, or
+                    MATIC on each Blockchain we are deployed you will earn your
+                    coins
                   </p>
                 </main>
               </div>
@@ -449,8 +468,9 @@ function App() {
                 <main>
                   <h6>6% Marketing/Dev</h6>
                   <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Molestias provident
+                    These funds are for promoting the Exotic Metaverse Token,
+                    growing targeted investors, and starting up the Metaverse
+                    program with Experienced Devs, and Game Devs.
                   </p>
                 </main>
               </div>
@@ -461,8 +481,11 @@ function App() {
                 <main>
                   <h6>Locked</h6>
                   <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Molestias provident
+                    These tokens are locked for various amounts of time to
+                    ensure trust with the community. When the time is run out we
+                    will lock again if we need more time or we will use the
+                    tokens to start building the project when we reach our
+                    milestones on the roadmap
                   </p>
                 </main>
               </div>
@@ -473,8 +496,8 @@ function App() {
                 <main>
                   <h6>Liquidity</h6>
                   <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Molestias provident
+                    We will lock liquidity for 6 months, and we will raise
+                    liquidity from NFTs sales, and lock for 1 year
                   </p>
                 </main>
               </div>
@@ -647,13 +670,6 @@ function App() {
         </div>
       </div>
 
-      {/* About Section */}
-      <div className="about2 section">
-        <div className="box">
-          <div className="about-content"></div>
-        </div>
-      </div>
-
       {/* Team */}
       <div className="team section" id="section5">
         <div className="box">
@@ -663,6 +679,9 @@ function App() {
               <img src={T2} alt="" />
               <h2>Nefu</h2>
               <h3>Lead Dev / Digital Marketing</h3>
+              <a href="https://linkedin.com/in/blackbuffett">
+                <FaLinkedin />
+              </a>
             </div>
             <div className="team-card">
               <img src={T1} alt="" />
@@ -686,7 +705,28 @@ function App() {
       {/* Footer */}
       <div className="footer">
         <div className="box">
-          <div className="footer-content"></div>
+          <div className="footer-content">
+            <div className="footer-left">
+              <img src={Logo} alt="img" />
+            </div>
+            <div className="footer-right">
+              <a href="https://www.facebook.com/Exot1cMetaverse">
+                <FaFacebook />
+              </a>
+              <a href="https://discord.com/invite/exoticmetaverse">
+                <FaDiscord />
+              </a>
+              <a href="https://www.youtube.com/channel/UCEYs74zGrpaDKFN08LjLnXg">
+                <FaYoutube />
+              </a>
+              <a href="https://www.t.me/ExoticMetaverse">
+                <FaTelegram />
+              </a>
+              <a href="https://exoticmetaverse.medium.com/subscribe">
+                <FaMedium />
+              </a>
+            </div>
+          </div>
         </div>
       </div>
     </div>
